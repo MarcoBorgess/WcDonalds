@@ -1,0 +1,33 @@
+/* FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+/* CSS */
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.orangebar {
+    height: 4px;
+    background-color: #f0c43f;
+    margin: 0;
+    padding: 0;
+}
+.bd1 img {
+    display: block;
+    width: 100%;
+}
+.content {
+    height: 500px;
+    background: url(https://d25dk4h1q4vl9b.cloudfront.net/bundles/common/headerbottom-home-v2.jpg) no-repeat;
+    background-size: 100% auto;
+}
+.navbar {
+    border-top: 6px solid #f0c43f;
+    border-bottom: 2px solid #7b7b7b;
+    background: linear-gradient(to bottom,rgba(241,244,246,1) 0,rgba(234,234,234,1) 50%,rgba(255,255,255,1) 100%);    
+}
+.logo {
+    position: fixed;
+}
