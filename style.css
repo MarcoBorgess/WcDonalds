@@ -20,6 +20,7 @@
 .conteudo {
     padding: 28px;
     text-align: center;
+    width: 100%;
     height: 100%;
     background: url(https://d25dk4h1q4vl9b.cloudfront.net/bundles/common/headerbottom-home-v2.jpg) no-repeat;
     background-size: 100% auto;
@@ -46,14 +47,11 @@ h1 {
     color: #404140;
     padding-bottom: 24px;
 }
-.boxs {
-    display: inline-block;
+.card-group {
+    justify-content: center;
 }
 .left {
-    padding-left: 17%;
-}
-.right {
-    padding-left: 2%;
+    padding-right: 24px;
 }
 .pbanner {
     box-shadow: 0 15px 20px -8px;
