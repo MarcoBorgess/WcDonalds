@@ -57,9 +57,9 @@ h1 {
     box-shadow: 0 15px 20px -8px;
     border: 1px solid #dadbdb;
     padding: 0;
+    margin-bottom: 24px;
 }
 .ptitle {
-    padding-top: 24px;
     font-family: 'Oswald', sans-serif;
     font-size: 24px;
     color: #404140;
@@ -81,4 +81,8 @@ h1 {
 }
 .sobree, .sobree:hover {
     color: white;
+}
+.h2link, .h2link:hover {
+    color: #404140;
+    text-decoration: none;
 }

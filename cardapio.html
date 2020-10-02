@@ -6,6 +6,9 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
       <link rel="icon" type="image/png" sizes="32x32" href="https://i.imgur.com/AvbzrNb.png">
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
       
       <title>WcDonald's - Cardápio</title>
   </head>
@@ -23,19 +26,19 @@
           <a class="nav-link" href="cardapio.html"> Cárdapio <span class="sr-only">(current)</span> </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#3"> Sobre </a>
+          <a class="nav-link" href="sobre.html"> Sobre </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#3"> Contato </a>
+          <a class="nav-link" href="contato.html"> Contato </a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link" id="adm" href="#4"> Adm </a>
+          <a class="nav-link" id="adm" href="" data-toggle="modal" data-target="#exampleModal"> Adm </a>
         </li>
       </ul> 
     </nav>  
     <!-- BACKGROUND 1 -->
     <div class="bd1">
-      <img src="https://d25dk4h1q4vl9b.cloudfront.net/bundles/front/media/images/banner/Mc-Home-Header-Institucional-01.jpg" alt="WcDonald's">
+      <img src="https://i.imgur.com/PV6Xt4U.png" alt="WcDonald's">
     </div>
     <!-- conteudo -->
     <div class="conteudo"> 
@@ -48,7 +51,9 @@
             </a>
           </div>
           <div class="ptitle">
-            <h2> Picanha ClubHouse </h2>
+            <a href="#picanha" class="h2link">
+              <h2> Picanha ClubHouse </h2>
+            </a>
           </div>
           <div class="psub">
             <p> </p>
@@ -61,7 +66,9 @@
             </a>
           </div>
           <div class="ptitle">
-            <h2> Duplo Cheddar </h2>
+            <a href="#duplocheddar" class="h2link">
+              <h2> Duplo Cheddar </h2>
+            </a>
           </div>
           <div class="psub">
             <p> </p> 
@@ -76,7 +83,9 @@
             </a>
           </div>
           <div class="ptitle">
-            <h2> Big Tasty Turbo Queijo </h2>
+            <a href="#BigTasty" class="h2link">
+              <h2> Big Tasty Turbo Queijo </h2>
+            </a>
           </div>
           <div class="psub">
             <p>  </p>
@@ -89,7 +98,74 @@
             </a>
           </div>
           <div class="ptitle">
-            <h2> Big Wac </h2>
+            <a href="#BigWac" class="h2link">
+              <h2> Big Wac </h2>
+            </a>
+          </div>
+          <div class="psub">
+            <p>  </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="left">
+          <div class="pitem" id="bigtasty">
+            <a href="#extrachicken">
+              <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-frango/extra-chicken_new.png" alt="">
+            </a>
+          </div>
+          <div class="ptitle">
+            <a href="#ExtraChicken" class="h2link">
+              <h2> Extra Chicken </h2>
+            </a>
+          </div>
+          <div class="psub">
+            <p>  </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="pitem">
+            <a href="#WcFritas">
+              <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/acompanhamentos/fritasv3.png" alt="">
+            </a>
+          </div>
+          <div class="ptitle">
+            <a href="#WcFritas" class="h2link">
+              <h2> WcFritas </h2>
+            </a>
+          </div>
+          <div class="psub">
+            <p>  </p>
+          </div>
+        </div>
+      </div>
+      <div class="card-group">
+        <div class="left">
+          <div class="pitem" id="bigtasty">
+            <a href="#refri">
+              <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/bebidas/bebidas_br4.png" alt="">
+            </a>
+          </div>
+          <div class="ptitle">
+            <a href="#Refrigerante" class="h2link">
+              <h2> Refrigerante </h2>
+            </a>
+          </div>
+          <div class="psub">
+            <p>  </p>
+          </div>
+        </div>
+        <div class="right">
+          <div class="pitem">
+            <a href="#WcFlurry">
+              <img src="https://i.imgur.com/dZqvqUM.png" alt="">
+            </a>
+          </div>
+          <div class="ptitle">
+            <a href="#WcFlurry" class="h2link">
+              <h2> WcFlurry </h2>
+              <h2> KOPENHAGEM EXAGERO</h2>
+            </a>
           </div>
           <div class="psub">
             <p>  </p>
@@ -102,11 +178,31 @@
 
   <!-- Copyright -->
   <div class="footer-copyright text-center py-3">© 2020 Copyright:
-    <a href="#contato" class="sobree"> WcDonalds.com.br</a>
+    <a href="contato.html" class="sobree"> WcDonalds.com.br</a>
   </div>
   <!-- Copyright -->
 
 </footer>
 <!-- Footer -->
+<!-- MODAL ADM -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
   </body>
 </html>
