@@ -75,6 +75,10 @@ h1 {
     background-color: #2f2f2f;
     color: #ffffff;
 }
-.cntt, .cntt:hover {
-    color: #ffffff;
+.page-footer {
+    color: white;
+    background-color: #F15E01;
+}
+.sobree, .sobree:hover {
+    color: white;
 }
