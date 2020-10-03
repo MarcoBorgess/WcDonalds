@@ -101,10 +101,10 @@
     </div>
     <!-- Footer -->
     <footer class="page-footer font-small">
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="contato.html" class="sobree"> WcDonalds.com.br</a>
-    </div>
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="contato.html" class="sobree"> WcDonalds.com.br</a>
+      </div>
     </footer>
     <!-- MODAL ADM -->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -116,12 +116,34 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+          <!-- CORPO DO MODAL -->
           <div class="modal-body">
-            INSERIR FORM DE LOGIN AQUI
+            <!-- LOGIN FORM -->
+            <div id="login">
+              <div class="container">
+                <div id="login-row" class="row justify-content-center align-items-center">
+                  <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                      <form id="login-form" class="form" action="" method="post">
+                        <div class="form-group">
+                          <label for="username" class="text-info">Usuário:</label><br>
+                          <input type="text" name="username" id="username" class="form-control">
+                        </div>
+                        <div class="form-group">
+                          <label for="password" class="text-info">Senha:</label><br>
+                          <input type="password" name="password" id="password" class="form-control">
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <!-- FOOTER DO MODAL -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Entrar</button>
+            <button type="button" class="btn btn-primary" id="btnEntrar">Entrar</button>
           </div>
         </div>
       </div>
