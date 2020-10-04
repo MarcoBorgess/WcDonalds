@@ -15,7 +15,9 @@
   <body>
     <!-- NAVBAR -->
     <div class="logo">
-      <img src="https://i.imgur.com/LF04JDt.png" alt="WcDonald's" width="90" height="90" class="imglogo">
+      <a href="index.html">
+        <img src="https://i.imgur.com/LF04JDt.png" alt="WcDonald's" width="90" height="90" class="imglogo">
+      </a>
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
       <ul class="navbar-nav">
@@ -34,7 +36,11 @@
         <li class="nav-item">
           <a class="nav-link" id="adm" href="" data-toggle="modal" data-target="#exampleModal"> Adm </a>
         </li>
-      </ul> 
+      </ul>
+      <!-- CARRINHO --> 
+      <a class="nav-link" href="" id="carrinho"> 
+        <img src="https://image.flaticon.com/icons/png/512/34/34562.png" alt="" width="24" height="24">
+      </a> 
     </nav>  
     <!-- BACKGROUND 1 -->
     <div class="bd1">
@@ -46,12 +52,12 @@
       <div class="card-group">
         <div class="left">
           <div class="pitem" id="picanha">
-            <a href="#picanha">
+            <a href="#picanha" data-toggle="modal" data-target="#modalPicanha">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/picanha/PicanhaClubhouse1carne.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#picanha" class="h2link">
+            <a href="#picanha" class="h2link" data-toggle="modal" data-target="#modalPicanha">
               <h2> Picanha ClubHouse </h2>
             </a>
           </div>
@@ -61,12 +67,12 @@
         </div>
         <div class="right">
           <div class="pitem" id="duplocheddar">
-            <a href="#duplocheddar">
+            <a href="#duplocheddar" data-toggle="modal" data-target="#modalCheddar">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/duplocheddarmcmelt-br.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#duplocheddar" class="h2link">
+            <a href="#duplocheddar" class="h2link" data-toggle="modal" data-target="#modalCheddar">
               <h2> Duplo Cheddar </h2>
             </a>
           </div>
@@ -78,12 +84,12 @@
       <div class="card-group">
         <div class="left">
           <div class="pitem" id="bigtasty">
-            <a href="#bigtasty">
+            <a href="#bigtasty" data-toggle="modal" data-target="#modalTasty">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigtastyturboqueijo.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#BigTasty" class="h2link">
+            <a href="#BigTasty" class="h2link" data-toggle="modal" data-target="#modalTasty">
               <h2> Big Tasty Turbo Queijo </h2>
             </a>
           </div>
@@ -93,12 +99,12 @@
         </div>
         <div class="right">
           <div class="pitem">
-            <a href="#bigwac">
+            <a href="#bigwac" data-toggle="modal" data-target="#modalWac">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigmac_v2.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#BigWac" class="h2link">
+            <a href="#BigWac" class="h2link" data-toggle="modal" data-target="#modalWac">
               <h2> Big Wac </h2>
             </a>
           </div>
@@ -109,13 +115,13 @@
       </div>
       <div class="card-group">
         <div class="left">
-          <div class="pitem" id="bigtasty">
-            <a href="#extrachicken">
+          <div class="pitem">
+            <a href="#extrachicken" data-toggle="modal" data-target="#modalChicken">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-frango/extra-chicken_new.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#ExtraChicken" class="h2link">
+            <a href="#ExtraChicken" class="h2link" data-toggle="modal" data-target="#modalChicken">
               <h2> Extra Chicken </h2>
             </a>
           </div>
@@ -125,12 +131,12 @@
         </div>
         <div class="right">
           <div class="pitem">
-            <a href="#WcFritas">
+            <a href="#WcFritas" data-toggle="modal" data-target="#modalFritas">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/acompanhamentos/fritasv3.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#WcFritas" class="h2link">
+            <a href="#WcFritas" class="h2link" data-toggle="modal" data-target="#modalFritas">
               <h2> WcFritas </h2>
             </a>
           </div>
@@ -141,13 +147,13 @@
       </div>
       <div class="card-group">
         <div class="left">
-          <div class="pitem" id="bigtasty">
-            <a href="#refri">
+          <div class="pitem">
+            <a href="#refri" data-toggle="modal" data-target="#modalRefri">
               <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/bebidas/bebidas_br4.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#Refrigerante" class="h2link">
+            <a href="#Refrigerante" class="h2link" data-toggle="modal" data-target="#modalRefri">
               <h2> Refrigerante </h2>
             </a>
           </div>
@@ -155,14 +161,14 @@
             <p>  </p>
           </div>
         </div>
-        <div class="right">
+        <div class="right" id="flurry">
           <div class="pitem">
-            <a href="#WcFlurry">
+            <a href="#WcFlurry" data-toggle="modal" data-target="#modalFlurry">
               <img src="https://i.imgur.com/dZqvqUM.png" alt="">
             </a>
           </div>
           <div class="ptitle">
-            <a href="#WcFlurry" class="h2link">
+            <a href="#WcFlurry" class="h2link" data-toggle="modal" data-target="#modalFlurry">
               <h2> WcFlurry </h2>
               <h2> KOPENHAGEM EXAGERO</h2>
             </a>
@@ -218,6 +224,175 @@
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
             <button type="button" class="btn btn-primary" id="btnEntrar">Entrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- MODAL CARDAPIOS -->
+    <!-- PICANHA -->
+    <div class="modal fade" id="modalPicanha" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Picanha das Galáxias</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/picanha/PicanhaClubhouse1carne.png" alt="">
+            <p class="cdesc"> Um delicioso hambúrguer feito com Picanha, bacon rústico, nosso famoso molho especial, queijo emental, cebola shoyu, alface e tomate fresquinhos, e maionese picanha no pão tipo brioche.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- DUPLO CHEDDAR -->
+    <div class="modal fade" id="modalCheddar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Duplo Cheddar</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/duplocheddarmcmelt-br.png" alt="">
+            <p class="cdesc"> Duplamente delicioso. Dois hambúrgueres, delicioso queijo tipo cheddar derretido, cebola ao molho shoyu e para completar um pão escuro com gergelim. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BIG TASTY TURBO QUEIJO -->
+    <div class="modal fade" id="modalTasty" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Big Tasty Turbo Queijo</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigtastyturboqueijo.png" alt="">
+            <p class="cdesc"> O maior sanduíche de carne 100% bovina do WcDonald’s agora também com creme de muçarela, 2 deliciosas fatias de queijo cheddar e emental, tomate, alface, cebola e o delicioso molho Tasty. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- BIG WAC -->
+    <div class="modal fade" id="modalWac" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Big Wac</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigmac_v2.png" alt="">
+            <p class="cdesc"> Não existe nada igual. Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CHICKEN -->
+    <div class="modal fade" id="modalChicken" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wc Chicken</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-frango/chicken_new.png" alt="">
+            <p class="cdesc"> O sabor que você adora. Frango empanado e dourado com molho suave e cremoso, acompanhado de alface crocante num pão com gergelim. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WC FRITAS -->
+    <div class="modal fade" id="modalFritas" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wc Fritas</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/acompanhamentos/fritasv3.png" alt="">
+            <p class="cdesc"> A batata frita menos famosa do mundo. Deliciosas batatas selecionadas, fritas, crocantes por fora, macias por dentro, douradas, irresistíveis, saborosas, famosas, e todos os outros adjetivos positivos que você quiser dar. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- REFRIGERANTES -->
+    <div class="modal fade" id="modalRefri" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Refrigerantes</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/bebidas/bebidas_br4.png" alt="">
+            <p class="cdesc"> Refrescante e geladinho. Uma bebida assim refresca a vida. Você pode escolher entre Coca-Cola, Coca-Cola Zero, Fanta Guaraná, Fanta Guaraná Zero ou Fanta Laranja. </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- WC FLURRY -->
+    <div class="modal fade" id="modalFlurry" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Wc Flurry</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img src="https://i.imgur.com/dZqvqUM.png" alt="">
+            <p class="cdesc"> Massa gelada, pedaços de chocolate ao leite, pepitas dark Kopenhagen e muita calda de chocolate, caramelo ou morango. Partiu experimentar? </p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
           </div>
         </div>
       </div>

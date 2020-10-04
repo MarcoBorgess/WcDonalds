@@ -89,3 +89,11 @@ h1 {
 .text-info {
     color: black!important;
 }
+#carrinho {
+    position: absolute;
+    margin-left: 70%;
+}
+.cdesc {
+    font-family: 'Oswald', sans-serif;
+    color: #7b7b7b;
+}
