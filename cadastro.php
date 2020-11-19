@@ -1,3 +1,6 @@
+<?php
+  session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,7 +12,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <title>WcDonald's - Brasil</title>
+    <title>WcDonald's - Administrativo</title>
   </head>
   <body>
     <!-- NAVBAR -->
@@ -20,8 +23,8 @@
     </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
       <ul class="navbar-nav">
-        <li class="nav-item active">
-          <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span> </a>    
+        <li class="nav-item ">
+          <a class="nav-link" href="index.html"> Home </a>    
         </li>
         <li class="nav-item">
           <a class="nav-link" href="cardapio.html"> Cárdapio </a>
@@ -32,8 +35,8 @@
         <li class="nav-item">
           <a class="nav-link" href="contato.html"> Contato </a>
         </li>  
-        <li class="nav-item">
-          <a class="nav-link" href="adm.php"> Adm </a>
+        <li class="nav-item active">
+          <a class="nav-link" href="adm.php"> Adm <span class="sr-only">(current)</span> </a>
         </li>
       </ul>
       <!-- CARRINHO --> 
@@ -47,63 +50,44 @@
     </div>
     <!-- conteudo -->
     <div class="conteudo"> 
-      <h1> HOJE NO WcDONALD'S </h1>
-      <div class="card-group">
-        <div class="left">
-          <div class="pbanner">
-            <a href="contato.html">
-              <img src="https://i.imgur.com/4UkTQv1.png" alt="" width="468" height="205">
+        <h1> CADASTRO ADMINISTRATIVO </h1>
+        <div class="card-group">
+        <form action="cadastrar.php" method="POST" id="cadastrar">
+          <?php
+            if(isset($_SESSION['status_cadastro'])):
+          ?>
+            <div class="alert alert-success">
+                <strong>Cadastro efetuado!</strong>
+                <p>Faça login com seu usuário e senha <a href="adm.php#entrar">aqui</a></p>  
+            </div>
+          <?php
+            endif;
+            unset($_SESSION['status_cadastro']);
+          ?>
+          <?php
+            if(isset($_SESSION['usuario_existe'])):
+          ?>
+            <div class="alert alert-danger">
+                <strong>ERRO:</strong> Usuário está em uso.
+            </div>
+          <?php
+            endif;
+            unset($_SESSION['usuario_existe']);
+          ?>
+            <div class="form-group">
+              <label for="user">Usuário:</label>
+              <input name="usuario" type="text" class="form-control" placeholder="Seu usuário" autofocus="">
+            </div>
+            <div class="form-group">
+              <label for="pwd">Senha:</label>
+              <input name="senha" type="password" class="form-control" placeholder="Sua senha">
+            </div>
+            <a href="adm.php#entrar">
+              <button type="button" class="btn btn-info" >Logar</button>
             </a>
-          </div>
-          <div class="ptitle">
-            <h2> Wéqui Zap </h2>
-          </div>
-          <div class="psub">
-            <p> O seu novo contatinho: +55 71 99229-2960 </p>
-          </div>
+            <button type="submit" class="btn btn-success">Enviar</button>
+        </form>
         </div>
-        <div class="right">
-          <div class="pbanner">
-            <a href="cardapio.html#bigtasty">
-              <img src="https://i.imgur.com/5JIaPw0.jpeg" alt="" width="468" height="205">
-            </a>
-          </div>
-          <div class="ptitle">
-            <h2> Big Tasty Turbo Queijo </h2>
-          </div>
-          <div class="psub">
-            <p> Cheddar, Emental e Creme de Muçarela. </p> 
-          </div>
-        </div>
-      </div>
-      <div class="card-group">
-        <div class="left">
-          <div class="pbanner">
-            <a href="cardapio.html#picanha">
-              <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/promotion-pill/5e133f7d4ffa54.47143310_B1252-CRIMCD035_1423_x_623.jpg" alt="" width="468" height="205">
-            </a>
-          </div>
-          <div class="ptitle">
-            <h2> Picanha ClubHouse </h2>
-          </div>
-          <div class="psub">
-            <p> Chegou mais um Picanha das Galáxias! </p>
-          </div>
-        </div>
-        <div class="right">
-          <div class="pbanner">
-            <a href="cardapio.html#flurry">
-              <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/promotion-pill/5ebab4813930e8.89553088_B1469-CRIMCD032_1423x623px_(1).jpg" alt="" width="468" height="205">
-            </a>
-          </div>
-          <div class="ptitle">
-            <h2> WcFlurry Kopenhagen Exagero </h2>
-          </div>
-          <div class="psub">
-            <p>  Feito de massa gelada, pedaços de chocolate ao leite e pepitas dark </p>
-          </div>
-        </div>
-      </div>
     </div>
     <!-- Footer -->
     <footer class="page-footer font-small">
