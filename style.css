@@ -78,6 +78,7 @@ h1 {
 .page-footer {
     color: white;
     background-color: #F15E01;
+    margin-top: 5%!important;
 }
 .sobree, .sobree:hover {
     color: white;
