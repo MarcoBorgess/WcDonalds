@@ -36,13 +36,9 @@
           <a class="nav-link" href="contato.html"> Contato </a>
         </li>  
         <li class="nav-item active">
-          <a class="nav-link" href="adm.php"> Adm <span class="sr-only">(current)</span> </a>
+          <a class="nav-link" href="painel.php"> Adm <span class="sr-only">(current)</span> </a>
         </li>
       </ul>
-      <!-- CARRINHO --> 
-      <a class="nav-link" href="" id="carrinho"> 
-        <img src="https://image.flaticon.com/icons/png/512/34/34562.png" alt="" width="24" height="24">
-      </a>
     </nav>  
     <!-- BACKGROUND 1 -->
     <div class="bd1">
@@ -79,9 +75,9 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="page-footer font-small">
+    <footer class="page-footer font-small fadm">
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
         <a href="contato.html" class="sobree"> WcDonalds.com.br</a>
       </div>
     </footer>

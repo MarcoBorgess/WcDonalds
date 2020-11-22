@@ -76,9 +76,9 @@ h1 {
     color: #ffffff;
 }
 .page-footer {
+    width: 100%;
     color: white;
     background-color: #F15E01;
-    margin-top: 5%!important;
 }
 .sobree, .sobree:hover {
     color: white;
@@ -89,10 +89,6 @@ h1 {
 }
 .text-info {
     color: black!important;
-}
-#carrinho {
-    position: absolute;
-    margin-left: 70%;
 }
 .cdesc {
     font-family: 'Oswald', sans-serif;
@@ -106,4 +102,21 @@ h1 {
 }
 .form-control::-webkit-input-placeholder{
     opacity: 0.6;
+}
+.fadm{
+    position: fixed;
+    bottom: 0;
+}
+.conteudoCompra{
+    padding-left: 10%;
+    padding-right: 10%;
+    align-content: center;
+}
+.titulocarrinho{
+    padding-top: 15px;
+}
+#painelcss{
+    padding: 28px;
+    width: 100%;
+    height: 100%;
 }

@@ -34,13 +34,9 @@
           <a class="nav-link" href="contato.html"> Contato </a>
         </li>  
         <li class="nav-item">
-          <a class="nav-link" href="adm.php"> Adm </a>
+          <a class="nav-link" href="painel.php"> Adm </a>
         </li>
       </ul>
-      <!-- CARRINHO --> 
-      <a class="nav-link" href="" id="carrinho"> 
-        <img src="https://image.flaticon.com/icons/png/512/34/34562.png" alt="" width="24" height="24">
-      </a> 
     </nav>  
     <!-- BACKGROUND 1 -->
     <div class="bd1">
@@ -182,7 +178,7 @@
     <!-- Footer -->
     <footer class="page-footer font-small">
       <!-- Copyright -->
-      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <div class="footer-copyright text-center py-2">© 2020 Copyright:
         <a href="contato.html" class="sobree"> WcDonalds.com.br</a>
       </div>
     </footer>
@@ -200,10 +196,10 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/picanha/PicanhaClubhouse1carne.png" alt="">
             <p class="cdesc"> Um delicioso hambúrguer feito com Picanha, bacon rústico, nosso famoso molho especial, queijo emental, cebola shoyu, alface e tomate fresquinhos, e maionese picanha no pão tipo brioche.</p>
+            <p class="cdesc">R$ 19.90</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-dimiss="modal" data-toggle="modal" data-target="#modalBuyPicanha">Comprar</button>
           </div>
         </div>
       </div>
@@ -221,10 +217,10 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/duplocheddarmcmelt-br.png" alt="">
             <p class="cdesc"> Duplamente delicioso. Dois hambúrgueres, delicioso queijo tipo cheddar derretido, cebola ao molho shoyu e para completar um pão escuro com gergelim. </p>
+            <p class="cdesc">R$ 14.90</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyCheddar">Comprar</button>
           </div>
         </div>
       </div>
@@ -242,10 +238,11 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigtastyturboqueijo.png" alt="">
             <p class="cdesc"> O maior sanduíche de carne 100% bovina do WcDonald’s agora também com creme de muçarela, 2 deliciosas fatias de queijo cheddar e emental, tomate, alface, cebola e o delicioso molho Tasty. </p>
+            <p class="cdesc">R$ 29.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyBigTasty">Comprar</button>
           </div>
         </div>
       </div>
@@ -263,10 +260,11 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-carne/bigmac_v2.png" alt="">
             <p class="cdesc"> Não existe nada igual. Dois hambúrgueres, alface, queijo e molho especial, cebola e picles num pão com gergelim. </p>
+            <p class="cdesc">R$ 14.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyBigWac">Comprar</button>
           </div>
         </div>
       </div>
@@ -284,10 +282,11 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/sanduiches-de-frango/chicken_new.png" alt="">
             <p class="cdesc"> O sabor que você adora. Frango empanado e dourado com molho suave e cremoso, acompanhado de alface crocante num pão com gergelim. </p>
+            <p class="cdesc">R$ 9.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyExtraChicken">Comprar</button>
           </div>
         </div>
       </div>
@@ -305,10 +304,11 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/acompanhamentos/fritasv3.png" alt="">
             <p class="cdesc"> A batata frita menos famosa do mundo. Deliciosas batatas selecionadas, fritas, crocantes por fora, macias por dentro, douradas, irresistíveis, saborosas, famosas, e todos os outros adjetivos positivos que você quiser dar. </p>
+            <p class="cdesc">R$ 7.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyWcFritas">Comprar</button>
           </div>
         </div>
       </div>
@@ -326,10 +326,11 @@
           <div class="modal-body">
             <img src="https://d25dk4h1q4vl9b.cloudfront.net/media/images/menu-content/BR/bebidas/bebidas_br4.png" alt="">
             <p class="cdesc"> Refrescante e geladinho. Uma bebida assim refresca a vida. Você pode escolher entre Coca-Cola, Coca-Cola Zero, Fanta Guaraná, Fanta Guaraná Zero ou Fanta Laranja. </p>
+            <p class="cdesc">R$ 5.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyRefri">Comprar</button>
           </div>
         </div>
       </div>
@@ -347,12 +348,292 @@
           <div class="modal-body">
             <img src="https://i.imgur.com/dZqvqUM.png" alt="">
             <p class="cdesc"> Massa gelada, pedaços de chocolate ao leite, pepitas dark Kopenhagen e muita calda de chocolate, caramelo ou morango. Partiu experimentar? </p>
+            <p class="cdesc">R$ 12.90</p>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-            <button type="button" class="btn btn-primary">Adicionar ao Carrinho</button>
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalBuyWcFlurry">Comprar</button>
           </div>
         </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR PICANHA -->
+    <div class="modal fade" id="modalBuyPicanha" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Picanha Clubhouse</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="PicanhaClubhouse" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="19.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR DCHEDDAR -->
+    <div class="modal fade" id="modalBuyCheddar" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Duplo Cheddar</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="DuploCheddar" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="14.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR BIG TASTY -->
+    <div class="modal fade" id="modalBuyBigTasty" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Big Tasty Turbo Queijo</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="BigTastyTurboQueijo" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="29.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR BIGWAC -->
+    <div class="modal fade" id="modalBuyBigWac" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Big Wac</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="BigWac" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="14.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR EXTRA CHICKEN -->
+    <div class="modal fade" id="modalBuyExtraChicken" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Extra Chicken</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="Extrachicken" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="9.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- Modal COMPRAR BIGWAC -->
+    <div class="modal fade" id="modalBuyBigWac" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Big Wac</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="BigWac" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="14.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- Modal COMPRAR WcFritas -->
+    <div class="modal fade" id="modalBuyWcFritas" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando uma Wc Fritas</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="WcFritas" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="7.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- Modal COMPRAR Refrigerante -->
+     <div class="modal fade" id="modalBuyRefri" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um Refrigerante 500ML</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="Refrigerante" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="5.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
+      </div>
+    </div>
+     <!-- Modal COMPRAR WcFlurry -->
+     <div class="modal fade" id="modalBuyWcFlurry" role="dialog">
+      <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">Você está comprando um WcFlurry KOPENHAGEM EXAGERO</h4> 
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+              </div>
+              <div class="modal-body">
+                  <!-- Modal Body -->
+                  <form action="ctr_cliente.php" method="POST">
+                      <input type="hidden" name="buy" value="1">
+                      <div class="form-group">
+                          <label for="email">Insira seu Nome</label>
+                          <input type="text" class="form-control" id="nome" name="txtNome" required> 
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Item</label>
+                          <input type="text" class="form-control" id="item" name="txtItem" value="WcFlurry" readonly>
+                      </div>
+                      <div class="form-group">
+                          <label for="pwd">Valor</label>
+                          <input type="text" class="form-control" id="valor" name="txtValor" value="12.90" readonly>
+                      </div>
+                      <button type="submit" class="btn btn-primary">Comprar</button>
+                  </form>
+              </div>
+          </div>
       </div>
     </div>
   </body>
